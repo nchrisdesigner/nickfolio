@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  scroll-behavior: smooth;
+}
+
+body {
+background: #161616;
+background: #141414;
+color: #fff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Fancy Button */
+.fancy-btn{
+  background-image: linear-gradient(
+    135deg,
+    #00d372,
+    #56acff 34%,
+    #7179ef 67%,
+    #d87cac
+    );
+  border-radius: 100em;
+  padding: .2vw;
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Svg curve */
+.line {
+  height: 1px;
+  position: relative;
+
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
+.line svg {
+  position: absolute;
+
+  height: 100px;
+
+  width: 100%;
+
+  top: -50px;
+}
+
+.line svg path {
+  stroke-width: 1px;
+
+  stroke: white;
+
+  fill: none;
+}
+
+.box {
+  height: 40px;
+
+  width: 100%;
+
+  display: flex;
+
+  position: relative;
+
+  top: -20px;
+
+  z-index: 1;
+}
+
+/* Tag  */
+
+.tag {
+  color: transparent;
+  margin-top: -.0625rem;
+  margin-bottom: -.0625rem;
+  background-image: linear-gradient(90deg, #ff4e10, #ff1b17 28%, #ff0f47 53%, #ff0571 67%, #f101e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8px;
+  /* border: 1px solid #ff0f47;
+  padding: 4px;
+  border-radius: 3px; */
+}
+
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked{
+  filter: hue-rotate(30deg);
+}
